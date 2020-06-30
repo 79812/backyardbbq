@@ -1,5 +1,70 @@
 body {
-    background-image: url(../img/bbqbackground.jpg);
+    background-color: white;
 	background-size: cover;
 	background-attachment: fixed;
+}
+#backgroundVideo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.navbar{
+	color: #F25C05 !important;
+	background-color: #F25C05 !important;
+}
+.navbar-brand, .nav-link{
+	color: black !important;
+}
+#main-text{
+ 	text-align: center;
+ 	font-family: roboto;
+	font-size: 4em;
+	margin-top: 2em;
+	opacity: 0;
+	animation:fadeInText 2400ms 0ms forwards;
+}
+#info-text{
+	text-align: center;
+ 	font-family: roboto;
+	font-size: 1.5em;
+	opacity: 0;
+	animation:fadeInTextInfo 2400ms 0ms forwards;
+}
+@keyframes fadeInText {
+  from {
+    transform: translateY(-3em);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInTextInfo {
+  from {
+    transform: translateY(-5.4em);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInText {
+  from {
+    transform: translateY(-3em);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInTextInfo {
+  from {
+    transform: translateY(-5.4em);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
