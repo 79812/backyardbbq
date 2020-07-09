@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 03, 2020 at 10:25 AM
+-- Generation Time: Jul 07, 2020 at 09:01 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.11
 
@@ -84,9 +84,9 @@ CREATE TABLE `productcategories` (
 --
 
 INSERT INTO `productcategories` (`productCategoryId`, `productCategoryTitle`, `productCategoryImage`, `productCategoryDescription`) VALUES
-(1, 'Big Green Egg', 'biggreenegg.png', ''),
-(2, 'Kamado Joe', '', ''),
-(3, 'The Bastard', '', '');
+(1, 'Big Green Egg', 'biggreenegg.png', 'The Big Green Egg badasd adsas asd asd asd asd asdasdasda asd asd asdasda ds'),
+(2, 'Kamado Joe', '', 'The Kamado Joe badasd adsas asd asd asd asd asdasdasda asd asd asdasda ds'),
+(3, 'The Bastard', '', 'The Bastard badasd adsas asd asd asd asd asdasdasda asd asd asdasda ds');
 
 -- --------------------------------------------------------
 
@@ -110,10 +110,12 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`productId`, `productTitle`, `productDescription`, `productWeight`, `productDimensions`, `productPricePerDay`, `productCategoryId`, `productImage`) VALUES
-(1, 'Big Green Egg Medium', 'aksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjk', '50.00', '120x50x50', '30.00', 1, 'biggreenegg.png'),
-(2, 'Big Green Egg Large', 'aksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjk', '60.00', '150x60x60', '40.00', 1, 'biggreenegg.png'),
-(3, 'Big Green Egg XtraLarge', 'aksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjk', '70.00', '180x70x60', '70.00', 1, 'biggreenegg.png'),
-(4, 'Kamado Joe Medium', 'aksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjkaksjdaskdkasdhasjkdhasjkdhasdkjashdjkasdhasdhaskjdhsjk', '40.00', '120x70x60', '40.00', 2, 'kamadojoe.png');
+(1, 'Big Green Egg Medium', 'The Big Green Egg badasd adsas asd asd asd asd asdasdasda asd asd asdasda ds', '50.00', '120x50x50', '30.00', 1, 'biggreenegg.png'),
+(2, 'Big Green Egg Large', 'The Big Green Egg badasd adsas asd asd asd asd asdasdasda asd asd asdasda ds', '60.00', '150x60x60', '40.00', 1, 'biggreenegg.png'),
+(3, 'Big Green Egg XtraLarge', 'The Big Green Egg badasd adsas asd asd asd asd asdasdasda asd asd asdasda ds', '70.00', '180x70x60', '70.00', 1, 'biggreenegg.png'),
+(4, 'Kamado Joe Medium', 'The Kamado Joe badasd adsas asd asd asd asd asdasdasda asd asd asdasda ds', '40.00', '120x70x60', '40.00', 2, 'kamadojoe.png'),
+(5, 'Kamado Joe Large', 'The Kamado Joe badasd adsas asd asd asd asd asdasdasda asd asd asdasda ds', '50.00', '120x50x50', '40.00', 2, 'kamadojoe.png'),
+(6, 'Kamado Joe Extra Large', 'The Kamado Joe badasd adsas asd asd asd asd asdasdasda asd asd asdasda ds', '60.00', '150x60x60', '50.00', 2, 'kamadojoe.png');
 
 -- --------------------------------------------------------
 
@@ -170,7 +172,7 @@ ALTER TABLE `productcategories`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `productId` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `productId` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
