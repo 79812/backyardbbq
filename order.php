@@ -48,6 +48,7 @@ Select a category or a product first<br />
 			<option>10</option>
 		</select>
 	</div>
+	<?php include('./assets/inc/form_submit.php'); ?>
 </div>
 <?php //ORDER SUM: ?>
 <div class="col text-break border">
